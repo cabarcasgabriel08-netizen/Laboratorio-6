@@ -1,0 +1,29 @@
+package Modelo;
+
+public class Vehiculo {
+
+    protected String numeroIdentificacionPlaca;
+    protected String tipoMarcaVehiculo;
+    protected double velocidadMaximaPermitida;
+
+    public Vehiculo(String placa, String marca, double velocidad) {
+        this.numeroIdentificacionPlaca = placa;
+        this.tipoMarcaVehiculo = marca;
+        this.velocidadMaximaPermitida = velocidad;
+    }
+
+    public void moverVehiculo() {
+        System.out.println("El vehículo está en movimiento");
+    }
+
+    public double calcularCostoPeaje() {
+        return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Placa: " + numeroIdentificacionPlaca +
+               ", Marca: " + tipoMarcaVehiculo +
+               ", Velocidad: " + velocidadMaximaPermitida;
+    }
+}
