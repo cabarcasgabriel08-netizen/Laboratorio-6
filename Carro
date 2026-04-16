@@ -1,0 +1,18 @@
+package Modelo;
+
+public class Carro extends Vehiculo {
+
+    protected int numeroTotalPuertas;
+
+    public Carro(String placa, String marca, double velocidad, int puertas) {
+        super(placa, marca, velocidad);
+        this.numeroTotalPuertas = puertas;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+               ", Puertas: " + numeroTotalPuertas;
+    }
+
+}
