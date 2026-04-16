@@ -1,0 +1,17 @@
+package Modelo;
+
+public class Moto extends Vehiculo {
+
+    protected String tipoCategoriaMotocicleta;
+
+    public Moto(String placa, String marca, double velocidad, String tipo) {
+        super(placa, marca, velocidad);
+        this.tipoCategoriaMotocicleta = tipo;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+               ", Tipo: " + tipoCategoriaMotocicleta;
+    }
+}
